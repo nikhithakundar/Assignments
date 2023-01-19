@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	
+	<!-- <bean id="addresses" class="com.springassignment.Address">
+	<property name="street" value="Barekattu"/>
+	<property name="city" value="Kundapura"/>
+	<property name="state" value="Karnataka"/>
+	<property name="zip" value="576234"/>
+	<property name="country" value="India"/>
+	</bean>
+	
+	<bean id="customerAdd" class="com.springassignment.Customer">
+	<property name="customerId" value="111"/>
+	<property name="customerName" value="Shwetha"/>
+	<property name="customerContact" value="9876"/>
+	<property name="customerAddress" value="India"/>
+	<property name="address1" ref="addresses"/>
+	</bean> -->
+	
+	<bean id="addresses" class="com.springassignment.Address">
+	<constructor-arg value="mainroad"/>
+	<constructor-arg value="kundapura"/>
+	<constructor-arg value="KA"/>
+	<constructor-arg value="768"/>
+	<constructor-arg value="India"/></bean>
+	
+	<bean id="customerAdd" class="com.springassignment.Customer">
+	<constructor-arg value="11"/>
+	<constructor-arg value="Shurya"/>
+	<constructor-arg value="67458"/>
+	<constructor-arg value="India"/>
+	<constructor-arg ref="addresses"/></bean>
+	
+	
+	
+	
+	
+   </beans>
